@@ -10,16 +10,18 @@ def linha():
 
 def new():
     while True:
-        vazia = list.clear
-        lista = list
-        vazia = str(input('Nome da Máquina: '))
-        vazia = str(input('Setor da Máquina: '))
-        lista = vazia
+        lista = []
+        vazia = []
+        vazia.append(str(input('Máquina: ')))
+        vazia.append(int(input('Número da máquina: ')))
+        lista.append(vazia[:])
+        vazia.clear()
+        linha()
         while True:
-            r = str(input('Quer Adicionar Mais: [s/n]')).strip().upper()
+            r = str(input('Quer Adicionar Mais: [s/n] ')).strip().upper()
+            linha()
             if r in 'SN':
                 break
         if r == 'N':
             break
-    print(lista)
     return lista
