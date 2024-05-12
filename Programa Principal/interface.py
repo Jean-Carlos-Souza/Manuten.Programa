@@ -19,5 +19,5 @@ while True:
         for i in exp:
             print(i)
         linha()
-    elif opc == 3:
+    else:
         break
