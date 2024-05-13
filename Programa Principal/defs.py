@@ -1,7 +1,8 @@
 def titulo(txt):
-    print('=' * len(txt))
+    a = len(txt)
+    print('=' * a )
     print(f'{txt}')
-    print('=' * len(txt))
+    print('=' * a )
 
 
 def linha():
